@@ -1,3 +1,10 @@
+import sys
+try:
+    import pysqlite3 as sqlite3  # type: ignore
+    sys.modules['sqlite3'] = sqlite3
+except Exception:
+    pass
+    
 import os, glob, pathlib
 from typing import List, Tuple
 
