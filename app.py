@@ -1,6 +1,12 @@
 import os, glob, streamlit as st
 from utils.rag import rebuild_index_from_folders
-
+import sys
+try:
+    import pysqlite3 as sqlite3  # type: ignore
+    sys.modules['sqlite3'] = sqlite3
+except Exception:
+    pass
+    
 st.set_page_config(page_title="BCA and HDB Renovation Works Assistant", page_icon="🧱", layout="wide")
 
 # ---- Hardcoded login ----
