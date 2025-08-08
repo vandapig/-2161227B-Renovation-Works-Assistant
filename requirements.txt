@@ -1,0 +1,12 @@
+# Core app
+streamlit>=1.29.0
+
+# Vector store + embeddings
+chromadb>=0.5.5
+sentence-transformers>=2.7.0
+
+# SQLite shim to satisfy Chroma on older systems
+pysqlite3-binary>=0.5.3
+
+# File loaders
+pypdf>=4.2.0
