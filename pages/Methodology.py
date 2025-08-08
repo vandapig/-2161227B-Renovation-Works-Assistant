@@ -21,13 +21,13 @@ This application uses **Retrieval‑Augmented Generation (RAG)**. At startup it 
 st.subheader("Case 1 — Chat with Preloaded Guides")
 case1_path = "assets/flowcharts/case1_flowchart.png"
 if os.path.exists(case1_path):
-    st.image(case1_path, caption="Flowchart — Case 1", use_column_width=True)
+    st.image(case1_path, caption="Flowchart — Case 1", use_container_width=True)
 else:
     st.info(f"Add flowchart image at: {case1_path}")
 
 st.subheader("Case 2 — Intelligent Search")
 case2_path = "assets/flowcharts/case2_flowchart.png"
 if os.path.exists(case2_path):
-    st.image(case2_path, caption="Flowchart — Case 2", use_column_width=True)
+    st.image(case2_path, caption="Flowchart — Case 2", use_container_width=True)
 else:
     st.info(f"Add flowchart image at: {case2_path}")
